@@ -19,3 +19,5 @@ for syn in synsets:
 
 print(f"Synonyms of '{word}':", ", ".join(synonyms) if synonyms else "None found")
 print(f"Antonyms of '{word}':", ", ".join(antonyms) if antonyms else "None found")
+
+word = word.lower()
