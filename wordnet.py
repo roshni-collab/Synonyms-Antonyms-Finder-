@@ -10,3 +10,9 @@ synonyms = set()
 for syn in synsets:
     for lemma in syn.lemmas():
         synonyms.add(lemma.name())
+
+antonyms = set()
+for syn in synsets:
+    for lemma in syn.lemmas():
+        if lemma.antonyms():
+            antonyms.add(lemma.antonyms()[0].name())
